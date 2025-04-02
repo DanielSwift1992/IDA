@@ -12,11 +12,11 @@ The system uses a modular architecture with clear components:
 
 **Metrics (metrics.py)** monitors information flows by tracking metrics such as magnitude, direction, locality, temporal patterns, and significance. It maintains compressed history for efficiency analysis and calculates flow parameters using JIT compilation.
 
-**Benchmark (benchmark.py)** tests performance by simulating matrix processing up to 10M x 10M while measuring execution time and memory usage, demonstrating asymptotic efficiency of O(N^1.9) for time and O(N) for memory.
+**Benchmark (benchmark.py)** tests performance by simulating matrix processing up to 10M x 10M while measuring execution time and memory usage, demonstrating asymptotic efficiency of O(N^1.9) for time and O(N log N) for memory.
 
 ## Performance
 
-IDA scales effectively even with massive matrices, showing time complexity of O(N^1.9) and space complexity of O(N). 
+IDA scales effectively even with massive matrices, showing time complexity of O(N^1.9) and space complexity of O(N log N). 
 
 **Key Results:**
 

@@ -30,7 +30,7 @@ def generate_and_save_data(rows: int, cols: int, density: float, vector_density:
     row_indices = np.random.randint(0, rows, size=nnz_matrix, dtype=np.int32)
     col_indices = np.random.randint(0, cols, size=nnz_matrix, dtype=np.int32)
     data = np.random.randn(nnz_matrix).astype(np.float32)
-    print("  - Creating CSR matrix for saving (may require memory)...")
+    print("  - Creating CSR matrix for saving (requires additional memory)...")
     try:
         matrix_csr = scipy.sparse.csr_matrix((data, (row_indices, col_indices)), shape=(rows, cols))
         print("  - CSR matrix created, generating vector...")

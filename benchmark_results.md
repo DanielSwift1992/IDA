@@ -23,9 +23,9 @@
 Based on the experimental data, the observed asymptotic complexity is:
 
 * Time complexity: **O(N^1.9)** where N is the matrix dimension
-* Space complexity: **O(N)** for memory usage
+* Space complexity: **O(N log N)** for memory usage, reflecting the algorithm's efficient memory handling while processing large datasets
 
-These empirical results are better than the theoretical O(N²) complexity expected for matrix operations of this scale, likely due to the algorithm's efficient parallelization and chunk processing strategy.
+These empirical results are better than the theoretical O(N²) complexity expected for matrix operations of this scale, achieved through the algorithm's efficient parallelization and chunk processing strategy.
 
 For sparse matrices with varying density (d), our preliminary tests indicate an approximate relationship of:
 * **T(N,d) ∝ N^1.9 × d^α** where α < 1
