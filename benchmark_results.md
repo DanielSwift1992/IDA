@@ -32,6 +32,8 @@ For sparse matrices with varying density (d), our preliminary tests indicate an 
 
 The empirical results closely match these asymptotic predictions, with prediction errors remaining below 15% across all test cases, despite the substantial differences in matrix sizes.
 
-Most significantly, the IDA algorithm successfully processed a massive 10M × 10M matrix (10^14 total elements with density 0.00001, containing approximately 10^9 non-zero elements) in just 32 minutes using only 4.3 GB of memory. A conventional approach would require petabytes of RAM for such computations.
+Most significantly, the IDA algorithm successfully processed a massive 10M × 10M matrix (10^14 total elements with density 0.00001, containing approximately 10^9 non-zero elements) in just 32 minutes using only 4.3 GB of memory. Standard sparse methods would still require significantly more memory for matrices of this scale.
+
+The O(N log N) space complexity derives from the algorithm's need to maintain flow tracking structures that grow logarithmically with input size, combined with the linear storage required for active chunks and result vectors.
 
 These results demonstrate the efficiency and practical significance of the IDA streaming approach for large-scale matrix operations that would be impossible with classical methods due to memory constraints. 

@@ -8,7 +8,7 @@ IDA is a matrix-vector operation algorithm for processing ultra-large sparse mat
 
 The system uses a modular architecture with clear components:
 
-**Engine (engine.py)** is the core algorithm implementing the diagonal information flow model. It manages matrix chunk generation with controlled density, parallel processing on multi-core systems, bidirectional computation for flow optimization, and adaptive chunk sizing based on task parameters.
+**Engine (engine.py)** is the core algorithm implementing the diagonal information flow model. It manages matrix chunk generation with controlled density, parallel processing on multi-core systems, bidirectional computation for flow optimization, and configurable chunk sizing based on system resources.
 
 **Metrics (metrics.py)** monitors information flows by tracking metrics such as magnitude, direction, locality, temporal patterns, and significance. It maintains compressed history for efficiency analysis and calculates flow parameters using JIT compilation.
 
