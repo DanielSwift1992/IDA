@@ -1,0 +1,80 @@
+# Cache and System Files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.so
+*.o
+*.a
+*.lib
+
+# Archived Files
+archive/
+old/
+backup*/
+*_old.*
+*_backup.*
+
+# Benchmark and Data Files
+*.npz
+*.npy
+*.mat
+*_data*.csv
+*_results*.csv
+*.dat
+*.bin
+*_data/
+*benchmark_data*.*
+*benchmark_*data*.*
+*data_vec*.*
+
+# Private Documentation
+docs/
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+*.sublime-*
+*~
+.settings/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Logs and Temp Files
+logs/
+*.log
+tmp/
+temp/
+.tmp/
+.temp/
+*/tmp/*
+*.out
+*.err
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb
+
+# Results and Figures
+results/
+figures/
+plots/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg 
